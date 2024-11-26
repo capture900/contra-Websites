@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contra - Create Your Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Contra</h1>
+        <p>Create your own video with gameplay backgrounds and narration!</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="create-video">
+        <h2>Create Your Video</h2>
+
+        <!-- Script Input Section -->
+        <div class="input-section">
+            <label for="script">Paste Your Script Here:</label>
+            <textarea id="script" rows="6" placeholder="Paste your scary story or script here..."></textarea>
+        </div>
+
+        <!-- Background Selection -->
+        <div class="input-section">
+            <label for="background">Select Gameplay Background:</label>
+            <select id="background">
+                <option value="subway-surfers">Subway Surfers</option>
+                <option value="cityscape">Cityscape</option>
+                <option value="forest">Forest Run</option>
+            </select>
+        </div>
+
+        <!-- Narrator Selection -->
+        <div class="input-section">
+            <label for="narrator">Select Narrator:</label>
+            <select id="narrator">
+                <option value="male">Male Narrator</option>
+                <option value="female">Female Narrator</option>
+            </select>
+        </div>
+
+        <!-- Subtitles Toggle -->
+        <div class="input-section">
+            <label for="subtitles">Add Subtitles:</label>
+            <input type="checkbox" id="subtitles">
+            <span>Enable Subtitles</span>
+        </div>
+
+        <!-- Generate Button -->
+        <button id="generate-video">Generate Video</button>
+
+        <!-- Preview Section -->
+        <div id="preview-section">
+            <h3>Video Preview:</h3>
+            <div id="video-preview">
+                <!-- Preview will show up here (this would be dynamic with a real system) -->
+                <p>Video preview will appear here...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Contra. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
